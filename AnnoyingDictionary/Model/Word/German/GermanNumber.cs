@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnnoyingDictionary.Model.German
 {
-    public class GermanNumber : Word
+    public class GermanNumber : WordBase
     {
         public GermanNumber(string word, string translation)
             : base(word, translation, Language.GERMAN, Type.NUMBER)

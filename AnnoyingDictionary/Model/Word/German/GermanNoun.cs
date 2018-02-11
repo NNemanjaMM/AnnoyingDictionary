@@ -6,24 +6,12 @@ using System.Threading.Tasks;
 
 namespace AnnoyingDictionary.Model.German
 {
-    public class GermanNoun : Word
+    public class GermanNoun : WordBase
     {
         #region Fields
 
         private Gender gender;
         private string plaural;
-
-        public Gender Gender
-        {
-            get { return gender; }
-            set { gender = value; }
-        }
-
-        public string Plaural
-        {
-            get { return plaural; }
-            set { plaural = value; }
-        }
 
         #endregion
 

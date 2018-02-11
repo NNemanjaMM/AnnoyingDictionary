@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnnoyingDictionary.Model.German
 {
-    public class GermanVerb : Word
+    public class GermanVerb : WordBase
     {
         #region Fields
 
@@ -30,17 +30,6 @@ namespace AnnoyingDictionary.Model.German
             this.presentThirdPerson = null;
             this.imperfect = null;
             this.participle = null;
-        }
-
-        public GermanVerb(string word, string translation, bool isRegular, string imperfect, string participle)
-            : base(word, translation, Language.GERMAN, Type.VERB)
-        {
-            this.isRegular = isRegular;
-            this.presentFirstPerson = null;
-            this.presentSecondPerson = null;
-            this.presentThirdPerson = null;
-            this.imperfect = imperfect;
-            this.participle = participle;
         }
 
         public GermanVerb(string word, string translation, bool isRegular, string imperfect, string participle)

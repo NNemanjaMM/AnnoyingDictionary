@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- TEMPLATES -->
+    
+    <Style TargetType="Label">
+        <Setter Property="Foreground" Value="Black" /> <!-- TODO omoguciti promenu teme (boje) -->
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="Separator">
+        <Setter Property="Background" Value="Gray" />
+        <Setter Property="Width" Value="200" />
+        <!-- TODO omoguciti promenu teme (boje) -->
+    </Style>
+    
+    <!-- CUSTOM STYLES -->
+    
+    <Style x:Key="WordLabel" TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+        <Setter Property="FontSize" Value="56" /> <!-- TODO omoguciti promenu velicine slova -->
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="DescriptionLabel" TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+    <Style x:Key="TranslationLabel" TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+        <Setter Property="FontSize" Value="32" />
+    </Style>
+    
+</ResourceDictionary>

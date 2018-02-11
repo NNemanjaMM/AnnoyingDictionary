@@ -10,7 +10,7 @@ namespace AnnoyingDictionary.Model
     public enum Type { NOUN, VERB, ADJECTIVE, PRONOUN, NUMBER, OTHER }
     public enum Gender { MASCULINE, FEMININE, NEUTER, PLURAL }
 
-    public abstract class Word
+    public abstract class WordBase
     {
         #region Fields
 
@@ -21,7 +21,7 @@ namespace AnnoyingDictionary.Model
 
         #endregion
 
-        public Word(string word, string translation, Language language, Type type)
+        public WordBase(string word, string translation, Language language, Type type)
         {
             this.word = word;
             this.translation = translation;
